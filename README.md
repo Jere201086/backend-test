@@ -45,19 +45,19 @@ Dentro da pasta raiz do projeto execute os comando abaixo.
 
 Construindo a imagem para executar o projeto:
 
-`docker build -t jmmo/dockernodejs .`
+`$ docker build -t jmmo/dockernodejs .`
 
 Para executar o projeto execute o comando abaixo no terminal:
 
-`docker run -p 3000:3000 -d jmmo/dockernodejs`
+`$ docker run -p 3000:3000 -d jmmo/dockernodejs`
 
 Para parar a execução do container digite o seguinte comando no terminal `<ID>` deve ser o ID do seu container em execução:
 
-`docker stop <ID>`
+`$ docker stop <ID>`
 
 Para obter o ID de seu container execute
 
-`docker container ls`
+`$ docker container ls`
 
 ## Testando a API
 

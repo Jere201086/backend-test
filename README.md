@@ -16,9 +16,14 @@ Esta é uma API desenvolvida em NodeJS que retorna listas de musicas baseadas na
 - **nodemon**
 
 ## Instalando projeto em sua maquina
-Faça o clone do repositorio em uma pasta de sua maquina
+Faça o [Download ](https://github.com/Jere201086/backend-test/archive/master.zip "Download ") ou clone o repositorio em uma pasta de sua maquina.
 ```bash
-$ git clone https://github.com/libgit2/libgit2
+$ git clone https://github.com/Jere201086/backend-test.git
+```
+
+Pelo terminal dentro da pasta da projeto instale o projeto e as dependencias com o comando.
+```bash
+$ npm install
 ```
 
 ## Executando projeto com Docker

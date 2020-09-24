@@ -51,16 +51,19 @@ Para executar o projeto execute o comando abaixo no terminal:
 
 `docker run -p 3000:3000 -d jmmo/dockernodejs`
 
-Para para a execução do container digite o seguinte comando no terminal <ID> deve ser o ID do seu container em execução:
+Para parar a execução do container digite o seguinte comando no terminal `<ID>` deve ser o ID do seu container em execução:
 
 `docker stop <ID>`
+
+Para obter o ID de seu container execute
+
+`docker container ls`
 
 ## Testando a API
 
 Você pode testar as chamadas para a API diretamente pelo browser ou usando Postman, Imsomnia etc...<br>
 #### Neste exemplo estou usando o Postman
-Para testar localmente<br>
-Crie duas novas requests do tipo **GET**
+Para testar localmente crie duas novas requests do tipo **GET**<br>
 1. Request para consultar a cidade:
 
 `GET http://localhost:3000/<cidade>`
@@ -69,7 +72,7 @@ Crie duas novas requests do tipo **GET**
 
 2. Request para obter o hitorico de consultas
 
-`GET http://localhost:3000/<cidade>`
+`GET http://localhost:3000/history`
 
 ![history](https://github.com/Jere201086/Images-For-Readmes/blob/master/img-backend-test-readme/history.png "history")
 

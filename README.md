@@ -4,17 +4,20 @@ Esta é uma API desenvolvida em NodeJS que retorna listas de musicas baseadas na
 - Para temperaturas entre 10ºC e 25ºC sugere Rock
 - Para temperaturas acima dos 25ºC sugere Pop
  A API tambem possui um historico de todas as consultas realizadas com sucesso não importando a forma como foi digitado o nome da cidade e retorna o numero total de consultas realizadas e o numero de consultas para cada cidade baseado na forma como foi digitado o nome da mesma.
+
  #### Para testar a API na WEB
 Substitua `<cidade>` pelo nome da cidade que deseja consultar.
 
-``
+`GET https://ingaia-backend-teste.herokuapp.com/<cidade>`
+
 Para visualizar o historico de chamadas utilize a chamada abaixo.
 
-`` 
+`GET https://ingaia-backend-teste.herokuapp.com/history` 
 
 ## Tecnologias Utilizadas
 - **NodeJS**
 - **MongoDB**
+- **Heroku**
 #### Denpendencias
 - **axios**
 - **cors**

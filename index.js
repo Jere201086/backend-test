@@ -25,6 +25,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use( '/', serviceRoute )
 
 
-app.listen('3000', () => {
+app.listen(process.env.PORT || '3000', () => {
     console.log('servidor iniciado na porta 3000 http://localhost:3000')
 })

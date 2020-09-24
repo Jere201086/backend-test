@@ -4,6 +4,14 @@ Esta é uma API desenvolvida em NodeJS que retorna listas de musicas baseadas na
 - Para temperaturas entre 10ºC e 25ºC sugere Rock
 - Para temperaturas acima dos 25ºC sugere Pop
  A API tambem possui um historico de todas as consultas realizadas com sucesso não importando a forma como foi digitado o nome da cidade e retorna o numero total de consultas realizadas e o numero de consultas para cada cidade baseado na forma como foi digitado o nome da mesma.
+ #### Para testar a API na WEB
+Substitua `<cidade>` pelo nome da cidade que deseja consultar.
+
+``
+Para visualizar o historico de chamadas utilize a chamada abaixo.
+
+`` 
+
 ## Tecnologias Utilizadas
 - **NodeJS**
 - **MongoDB**
@@ -49,8 +57,9 @@ Para para a execução do container digite o seguinte comando no terminal <ID> d
 
 ## Testando a API
 
-Você pode testar as chamadas para a API diretamente pelo browser ou usando Postman, Imsomnia etc...
-Neste exemplo estou usando o Postman
+Você pode testar as chamadas para a API diretamente pelo browser ou usando Postman, Imsomnia etc...<br>
+#### Neste exemplo estou usando o Postman
+Para testar localmente<br>
 Crie duas novas requests do tipo **GET**
 1. Request para consultar a cidade:
 
@@ -63,3 +72,4 @@ Crie duas novas requests do tipo **GET**
 `GET http://localhost:3000/<cidade>`
 
 ![history](https://github.com/Jere201086/Images-For-Readmes/blob/master/img-backend-test-readme/history.png "history")
+

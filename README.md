@@ -39,8 +39,8 @@ $ npm install
 ```
 
 ## Executando projeto com Docker
-Antes de iniciar a execução com o Docker certifique-se de ter preencido o arquivo *.env *
-na pasta raiz do projeto com os dados necessarios para garantir o acesso da aplicação ao MongoDB , API do Spotify e a API Weather. Essa configuração é necessaria para garantir a segurança de seus dados de acesso.
+Antes de iniciar a execução com o Docker certifique-se de ter criado epreenchido o arquivo *.env*
+na pasta raiz do projeto com os dados necessarios para garantir o acesso da aplicação ao MongoDB , API do Spotify e a API Weather os modelos de como criar e setar essas variaveis estão no arquivo *.env-sample*. Essa configuração é necessaria para garantir a segurança de seus dados de acesso.
 
 ![.env file](https://github.com/Jere201086/Images-For-Readmes/blob/master/img-backend-test-readme/envIMG.png ".env file")
 

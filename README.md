@@ -21,7 +21,8 @@ Faça o [Download ](https://github.com/Jere201086/backend-test/archive/master.zi
 $ git clone https://github.com/Jere201086/backend-test.git
 ```
 
-Pelo terminal dentro da pasta da projeto instale o projeto e as dependencias com o comando.
+Pelo terminal dentro da pasta do projeto execute o comando abaixo para instalar
+as dependencias.
 ```bash
 $ npm install
 ```
@@ -29,7 +30,10 @@ $ npm install
 ## Executando projeto com Docker
 Antes de iniciar a execução com o Docker certifique-se de ter preencido o arquivo *.env *
 na pasta raiz do projeto com os dados necessarios para garantir o acesso da aplicação ao MongoDB , API do Spotify e a API Weather. Essa configuração é necessaria para garantir a segurança de seus dados de acesso.
+
 ![.env file](https://github.com/Jere201086/Images-For-Readmes/blob/master/img-backend-test-readme/envIMG.png ".env file")
+
+Dentro da pasta raiz do projeto execute os comando abaixo.
 
 Construindo a imagem para executar o projeto:
 
@@ -42,3 +46,20 @@ Para executar o projeto execute o comando abaixo no terminal:
 Para para a execução do container digite o seguinte comando no terminal <ID> deve ser o ID do seu container em execução:
 
 `docker stop <ID>`
+
+## Testando a API
+
+Você pode testar as chamadas para a API diretamente pelo browser ou usando Postman, Imsomnia etc...
+Neste exemplo estou usando o Postman
+Crie duas novas requests do tipo **GET**
+1. Request para consultar a cidade:
+
+`GET http://localhost:3000/<cidade>`
+
+![consulta](https://github.com/Jere201086/Images-For-Readmes/blob/master/img-backend-test-readme/query.png "consulta")
+
+2. Request para obter o hitorico de consultas
+
+`GET http://localhost:3000/<cidade>`
+
+![history](https://github.com/Jere201086/Images-For-Readmes/blob/master/img-backend-test-readme/history.png "history")

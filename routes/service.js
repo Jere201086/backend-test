@@ -61,7 +61,7 @@ router.get('/:city', async(req, res) => {
             })
 
             // Convertendo temperatura absoluta de Kelvin para Celcius(celciusTemp)
-            let celsiusTemp = data.main.temp - 273.15;
+            let celsiusTemp = data.main.temp - 273.15;//10
 
             // Sugerir musicas Classicas
             if (celsiusTemp <= 10 ) {
@@ -92,6 +92,7 @@ router.get('/:city', async(req, res) => {
            
                 //Retornando genero sugerido e lista de musicas.
                 res.status(200).send({
+                    temperatura: `${celsiusTemp}`,
                     gender: 'Musica Classica',
                     playlist:`${playlist.map(playlistItem => [playlistItem.name])}`
 
@@ -125,6 +126,7 @@ router.get('/:city', async(req, res) => {
               
                 //Retornando genero sugerido e lista de musicas.
                 res.status(200).send({
+                    temperatura: `${celsiusTemp}`,
                     gender: 'Rock',
                     playlist:`${playlist.map(playlistItem => [playlistItem.name])}`
 
@@ -158,6 +160,7 @@ router.get('/:city', async(req, res) => {
             
                 //Retornando genero sugerido e lista de musicas.
                 res.status(200).send({
+                    temperatura: `${celsiusTemp}`,
                     gender: 'Musica Pop',
                     playlist:`${playlist.map(playlistItem => [playlistItem.name])}`
 

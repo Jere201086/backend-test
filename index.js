@@ -28,4 +28,3 @@ app.use( '/', serviceRoute )
 app.listen('3000', () => {
     console.log('servidor iniciado na porta 3000 http://localhost:3000')
 })
-

@@ -40,7 +40,7 @@ $ npm install
 ```
 
 ## Executando projeto com Docker
-Antes de iniciar a execução com o Docker certifique-se de ter criado epreenchido o arquivo *.env*
+Antes de iniciar a execução com o Docker certifique-se de ter criado e preenchido o arquivo *.env*
 na pasta raiz do projeto com os dados necessarios para garantir o acesso da aplicação ao MongoDB , API do Spotify e a API Weather os modelos de como criar e setar essas variaveis estão no arquivo *.env-sample*. Essa configuração é necessaria para garantir a segurança de seus dados de acesso.
 
 ![.env file](https://github.com/Jere201086/Images-For-Readmes/blob/master/img-backend-test-readme/envIMG.png ".env file")
@@ -55,11 +55,12 @@ Para executar o projeto execute o comando abaixo no terminal:
 
 `$ docker run -p 3000:3000 -d jmmo/dockernodejs`
 
-Para parar a execução do container digite o seguinte comando no terminal `<ID>` deve ser o ID do seu container em execução:
+Para parar a execução do container digite o seguinte comando no terminal:
 
 `$ docker stop <ID>`
 
-Para obter o ID de seu container execute
+`<ID>` deve ser o ID do seu container em execução.<br>
+Para obter o ID de seu container execute:
 
 `$ docker container ls`
 
@@ -79,4 +80,12 @@ Para testar localmente crie duas novas requests do tipo **GET**<br>
 `GET http://localhost:3000/history`
 
 ![history](https://github.com/Jere201086/Images-For-Readmes/blob/master/img-backend-test-readme/history.png "history")
+
+## Contribuindo
+
+1. Faça o _fork_ do projeto (<https://github.com/Jere201086/backend-test/fork>)
+2. Crie uma _branch_ para sua modificação (`git checkout -b <seu nome>/<feature>`)
+3. Faça o _commit_ (`git commit -am '<comentario sobre alteração>'`)
+4. _Push_ (`git push origin  <seu nome>/<feature>`)
+5. Crie um novo _Pull Request_
 
